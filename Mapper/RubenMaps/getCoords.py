@@ -2,7 +2,6 @@ import sys
 import exifread
 import os
 
-print(str(sys.argv[1]))
 photo = open(str(sys.argv[1]), 'rb')
 tags = exifread.process_file(photo)
 photo.close()
